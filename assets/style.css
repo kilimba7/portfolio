@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    --primary: rgb(4, 3, 16);
+    --secondary: rgb(0, 166, 255);
+    --tertiary: white;
+  }
+  
+  body {
+    color: var(--primary);
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  
+  /* HEADER / NAV BAR STYLES START */
+  
+  header {
+    padding: 20px 35px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    font-size: 36px;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--secondary);
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+  }
+  
+  /* HEADER / NAVBAR STYLES END */
+  
+  
+  
+  /* FOOTER STYLES START */
+  footer {
+    background: var(--primary);
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  footer h1 {
+    color: var(--secondary);
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  footer div {
+    display: inherit;
+    line-height: 1.5;
+    text-align: right;
+  }
+  
+  footer a {
+    color: var(--secondary);
+    padding: 15px;
+  }
+
+  div h1 {
+      border-bottom: 3px solid;
+      color: var(--primary);
+      padding-bottom: 20px;
+      padding-top: 20px;
+      text-align: center;
+      margin: 0 auto 35px auto;
+      width: 50%;
+  }
+
+  div p {
+    line-height: 1.7;
+    color: var(--primary);
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
