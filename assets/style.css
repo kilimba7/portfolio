@@ -1,9 +1,9 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    --primary: rgb(205, 14, 14);
-    --secondary: rgba(241, 210, 98, 0.847);
-    --tertiary: #00000060;
+    --primary: rgb(0, 0, 0);
+    --secondary: rgba(73, 72, 68, 0.199);
+    --tertiary: #ee2e2e;
   }
   
   /* selecting my default styles */
@@ -11,10 +11,15 @@
     font-family: 'Courier New', Courier, monospace, Arial, sans-serif;
   }
 
+  main {
+    background-color: var(--secondary);
+    box-shadow: 0 4px 8px var(--primary);
+   }
+
   /* HEADER / NAV BAR STYLES START */
   header {
     padding: 20px 35px;
-    background-color: var(--tertiary);
+    background-color: var(--secondary);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -27,7 +32,7 @@
   
 
   header a {
-    text-decoration: underline overline var(--primary);
+    text-decoration: underline overline var(--tertiary);
     color: var(--primary);
   }
   
@@ -55,7 +60,7 @@
   
   /* FOOTER STYLES START */
   footer {
-    background: var(--tertiary);
+    background: var(--secondary);
     padding: 40px 35px;
     display: flex;
     justify-content: space-between;
@@ -67,7 +72,7 @@
   footer h1 {
     color: var(--primary);
     font-size: 2vw;
-    text-decoration: underline var(--primary);
+    text-decoration: underline var(--tertiary);
   }
   
   footer div {
@@ -79,7 +84,7 @@
   footer a {
     color: var(--primary);
     padding: 15px;
-    text-decoration: underline overline var(--primary);
+    text-decoration: underline var(--tertiary);
     font-size: 1.55vw;
   }
 
@@ -88,6 +93,10 @@
   /* spacing my bio out from my avatar */
   p {
     padding: 5%;
+  }
+
+  h2 {
+    text-decoration: underline var(--tertiary);
   }
 
   /* styling my images */
@@ -117,13 +126,18 @@
   .hero-section {
     color: var(--primary);
     font-size: 2vw;
-    text-decoration: underline var(--primary);
+    text-decoration: underline var(--tertiary);
+    text-align: left;
+    padding-left: 2%;
+    padding-top: 5%;
   }
 
   .project-section {
     color: var(--primary);
     font-size: 2vw;
-    text-decoration: underline var(--primary);
+    text-decoration: underline var(--tertiary);
+    text-align: left;
+    padding-left: 2%;
   }
 
   .projects {
@@ -145,7 +159,5 @@
 
 
  
-  
-
 
 
